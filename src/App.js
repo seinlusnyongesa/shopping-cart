@@ -54,7 +54,7 @@ function App() {
 
   return (
     <>
-      <Router basename="/">
+      <Router basename="/shopping-cart">
         <Header handleOpenCart={handleOpenCart} cart={cart} />
         <Routes>
           <Route path="/" element={<Home />} />
