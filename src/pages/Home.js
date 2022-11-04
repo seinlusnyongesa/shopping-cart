@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="min-h-[calc(100vh-4.5rem)] flex justify-center items-center relative bg-slate-200">
+    <div className="min-h-[calc(100vh-4.5rem)] flex justify-center items-center relative bg-slate-100">
       <div className="w-[40rem]  mx-auto p-2 relative flex flex-col ">
         <h1 className="capitalize text-blue-400 font-semibold text-center text-2xl mb-2">
           get the best products from our store
