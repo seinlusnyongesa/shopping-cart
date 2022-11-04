@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Product from "../components/Product";
 
-const Products = () => {
+const Products = ({ addToCart }) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ const Products = () => {
       {products.length > 0 ? (
         <div className="grid gap-4 mt-6 max-w-5xl mx-auto grid-cols-fluid">
           {products.map((product) => (
-            <Product key={product.id} product={product} />
+            <Product key={product.id} product={product} addToCart={addToCart} />
           ))}
         </div>
       ) : (
